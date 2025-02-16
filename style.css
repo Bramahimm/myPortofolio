@@ -1,0 +1,44 @@
+html {
+  margin: auto;
+  height: 100vh;
+  background-color: #050c1a;
+}
+
+.kucing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#gambar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  max-width: 350px;
+}
+
+#gambar img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+#namaSaya {
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#teks {
+  flex: 1;
+  display: flex;
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  max-width: 600px;
+  padding: 20px;
+}
