@@ -4,7 +4,7 @@ html {
   background-color: #050c1a;
 }
 
-.kucing {
+.containerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +33,9 @@ html {
 }
 
 #teks {
-  flex: 1;
-  display: flex;
   color: white;
   text-align: justify;
-  font-size: 16px;
-  font-family: 'Fira Code', monospace;
+  font: 14px "Fira Code";
   max-width: 600px;
   padding: 20px;
 }
