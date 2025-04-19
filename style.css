@@ -4,6 +4,10 @@ html {
   background-color: #050c1a;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
 .containerContent {
   display: flex;
   flex-direction: column;
