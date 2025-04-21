@@ -1,110 +1,84 @@
+<!-- index.html (Home) -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortoBram</title>
-    <link rel="icon" href="assets/kucing1.jpeg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="https://github.com/Bramahimm">
-          <img src="assets/gambarJari.jpg" alt="Avatar" class="rounded-circle me-2" width="32" height="32" />
-          <span class="fw-bold">Portofolio Bram</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutMe.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Experience.html">Experience</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porto Bram Ahimsa - Home</title>
+  <link rel="icon" href="images/Me.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">BramahimmCode</a>
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="project.html">Project</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="bx bx-moon" id="darkMode-icon"></div>
+  <div class="bx bx-menu" id="menu-icon"></div>
+</header>
+
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Hello, Gua</h3>
+    <h1>Bram Ahimsa</h1>
+    <p>
+        kegiatan saya saat ini adalah tidur, bangun, ngoding, repeat (kalo lagi malas ya ke indomaret beli golda)
+    </p>
+    <p>keseharian saya hanya tidur, makan, minum, mengasap dan skrol tiktod.</p>
+    <div class="social-media">
+      <a href="https://github.com/bramahimm" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://linkedin.com/in/bramahimsa28" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="mailto:bramahimm@example.com"><i class='bx bxl-gmail'></i></a>
+    </div>
+    <a href="#" class="btn">Donlot CV</a>
+  </div>
+  <div class="profession-container">
+    <div class="profession-box">
+      <div class="profession" style="--i:0">
+        <i class='bx bx-code-alt'></i>
+        <h3>Suka ngoding</h3>
       </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="position-relative bg-dark text-white text-center" style="background-image: url('assets/hero-bg.jpg'); background-size: cover; background-position: center; height: 320px;">
-      <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
-      <div class="position-relative z-1 d-flex flex-column justify-content-center align-items-center h-100">
-        <h1 class="fw-bold fs-2 mb-2">Hi, I'm Bram Ahimsa Lafayet</h1>
-        <p class="mb-3">A passionate Computer Science student eager to explore the world of technology.</p>
-        <div>
-          <a href="assets/CV.pdf" download class="btn btn-primary me-2">Download CV</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
-        </div>
+      <div class="profession" style="--i:1">
+        <i class='bx bx-camera'></i>
+        <h3>Suka senja</h3>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-dark text-white">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">About Me</h2>
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/Me.jpg" alt="Bram Ahimsa" class="img-fluid rounded shadow">
-          </div>
-          <div class="col-md-6">
-            <p>I am a second-year Computer Science student at the University of Lampung. My interests include frontend and backend development, data science, and cybersecurity.</p>
-          </div>
-        </div>
+      <div class="profession" style="--i:2">
+        <i class='bx bx-palette'></i>
+        <h3>Suka design</h3>
       </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="py-5 bg-secondary">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Tech Stack</h2>
-        <div class="row text-center">
-          <div class="col-6 col-md-3 mb-3">
-            <div class="p-3 bg-light rounded shadow">
-              <img src="assets/logoHTML.png" alt="HTML" class="mb-2" width="48">
-              <p class="fw-semibold">HTML</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-3">
-            <div class="p-3 bg-light rounded shadow">
-              <img src="assets/cssLogo.png" alt="CSS" class="mb-2" width="45">
-              <p class="fw-semibold">CSS</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-3">
-            <div class="p-3 bg-light rounded shadow ">
-              <img src="assets/jsLogo.png" alt="JavaScript" class="mb-2" width="48">
-              <p class="fw-semibold">JavaScript</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-3">
-            <div class="p-3 bg-light rounded shadow">
-              <img src="assets/pyLogo.png" alt="Python" class="mb-2" width="48">
-              <p class="fw-semibold">Python</p>
-            </div>
-          </div>
-        </div>
+      <div class="profession" style="--i:3">
+        <i class='bx bx-video-recording'></i>
+        <h3>Editor</h3>
       </div>
-    </section>
+      <div class="circle"></div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <div class="home-img">
+    <img src="images/me.png" alt="">
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-secondary text-white text-center">
-      <p class="mb-0">&copy; 2023 Bram Ahimsa Lafayet. All rights reserved.</p>
-    </footer>
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &copy; Bram 2025 | All Rights Reserved.</p>
+  </div>
+  <div class="footer-iconTop">
+    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
 
-    <script src="skrip.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
