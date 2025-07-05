@@ -24,6 +24,15 @@
     background: var(--main-color);
     color: var(--bg-color);
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
 
 .dark-mode {
     --bg-color: #0b061f;
